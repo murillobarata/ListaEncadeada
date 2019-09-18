@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Lista Encadeada
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="lista.js"></script>
+    </head>
+
+    <body>
+
+        <div class="header light-green lighten-5">
+            Lista Encadeada
+        </div>
+
+        <div class="row padding-5">
+            
+            <div class="col s4 center promo">
+                <i class="material-icons">people</i>
+                <p class="promo-caption">O que é?</p>
+                <p>
+                    A Lista consiste em uma sequência de nós, em que cada nó tem uma
+                    referência para o próximo. O último nó tem um referência nula para o
+                    próximo.
+                </p>
+            </div>
+            <div class="col s4 center promo">
+                <i class="material-icons">add_circle</i>
+                <p class="promo-caption">Inserir</p>
+                <p>
+                    A inserção na Lista pode ser feita tanto no início como no final.
+                    Além disso, um elemento pode ser inserido em uma posição específica da lista,
+                    como, por exemplo, quando se quer inserir de maneira ordenada.
+                </p>
+            </div>
+            <div class="col s4 center promo">
+                <i class="material-icons">remove_circle</i>
+                <p class="promo-caption">Remover</p>
+                <p>
+                    A remoção também pode ser feita tanto no início como no final.
+                    Pode-se, também, remover um elemento em específico, independente de posição.
+                </p>
+            </div>
+        
+        </div>
+
+        <div class="div-buttons">
+            <a onclick="inserirInicio()" class="col s6 mt-5 waves-effect waves-light btn-large teal lighten-2 mr-5">Inserir no Início</a>
+            <a onclick="tamanho()" class="col s6 mt-5 waves-effect waves-light btn-large teal lighten-2 mr-5">Calcular Tamanho</a>            
+            <!-- <a onclick="inserirFinal()" class="col s6 mt-5 waves-effect waves-light btn-large teal lighten-2 mr-5">Inserir no Final</a> -->
+            <a onclick="inserirOrdenado()" class="col s6 mt-5 waves-effect waves-light btn-large teal lighten-2 mr-5">Inserir Ordenado</a>
+            <!-- <a onclick="remover()" class="col s6 mt-5 waves-effect waves-light btn-large red lighten-2">Remover</a> -->
+        </div>
+
+        <div id="lista" class="lista">
+
+
+        </div>
+
+    </body>
+
+</html>
